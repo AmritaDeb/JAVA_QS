@@ -1,0 +1,47 @@
+
+//num to word 0-999
+
+class p2
+{
+
+	static String[] one = {"","one","two","three","four","five","six","seven","eight","nine","ten",
+							"eleven","tweleve","thirteen","forteen","fivteen","sixteen","seventeen","eighteen","nineteen"};
+
+	static String[] two = {"","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"};
+
+	static String display(int n)
+	{
+		String word = "";
+		if (n==0)
+		{
+			return "zero";
+		}
+		else if (n<20)
+		{
+			word = one[n%20];
+			return word;
+		}
+		else
+		{
+			word = two[n/10] + "" + one[n%10];
+			return word;
+		}
+	}
+	static String display(int n, String word)
+	{
+		return display(n/100) + " hundred " + "" + display(n%100);
+	}
+	public static void main(String[] args) 
+	{
+		int n = 129;
+		if (n<=99)
+		{
+			System.out.println(display(n));
+		}
+		else if (n>99)
+		{
+			System.out.println(display(n,""));
+		}
+		//System.out.println(display(n));
+	}
+}

@@ -1,0 +1,54 @@
+class Emp
+{
+	int id;
+	String name;
+	double salary;
+	
+	void work()
+	{
+		System.out.println(this.name + " should work");
+	}
+
+	Emp()
+	{
+	
+	}
+
+	Emp(int id)
+	{
+		this.id=id;
+	}
+
+	Emp(int id, String name)
+	{
+		this(id);
+		this.name=name;
+	}
+
+	Emp(int id, String name, double sal)
+	{
+		this(id,name);
+		this.salary=sal;
+	}
+
+	public int getId()
+	{
+		return id;
+	}
+}
+
+class EmpDriver
+{
+	public static void main(String[] args) 
+	{
+		Emp e1 = new Emp();
+		e1.getId();
+
+		Emp e2 = new Emp(1,"Amy",20000);
+		System.out.println(e2.id);
+		System.out.println(e2.name);
+		System.out.println(e2.salary);
+
+		e2.work();
+	}
+}

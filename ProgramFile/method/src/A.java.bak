@@ -1,0 +1,43 @@
+class A 
+{
+	static int a;
+	int x = 10;
+
+	static
+	{
+		System.out.println("A.static block");
+	}
+
+	{
+		System.out.println("A.non-static block");
+	}
+
+	static void A()
+	{
+		System.out.println("A.static method");
+	}
+
+	void B()
+	{
+		System.out.println("A.non-static method");
+	}
+
+	A()
+	{
+
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("A.main method");
+		A ob = new A();
+		System.out.println(ob.x);
+		System.out.println(ob.a);
+		System.out.println(A.a);
+
+		ob.A();
+		ob.B();
+		A.A();
+
+	}
+}

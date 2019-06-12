@@ -1,0 +1,21 @@
+package hmap; 
+
+
+import java.util.* ;
+
+class   F2
+{
+	public static void main(String[] args) 
+	{
+		Map <Integer , String> m = new HashMap<>() ;
+		Scanner sc = new Scanner(System.in) ;
+		m.put(1 ,"sheela") ;
+		m.put(2 ,"dosa") ;
+		m.put(3,"idli") ;
+		m.put(4,"idli") ;
+		System.out.println(m) ;
+		Collection ls  = new ArrayList() ;
+		ls = m.values() ;
+		System.out.println(ls) ;
+	}
+}

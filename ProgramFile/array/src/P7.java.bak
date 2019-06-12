@@ -1,0 +1,32 @@
+
+/*Design a method which can accept an array as input and returns summation of array elements*/
+
+import java.util.Scanner;
+
+class P7
+{
+	static Scanner s = new Scanner(System.in);
+
+	static int arraySum(int[] a)
+	{
+		int result = 0;
+		for (int i=0; i<a.length; i++)
+		{
+			result+=a[i];
+		}
+		return result;
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the size");
+		int size = s.nextInt();
+		int[] a = new int[size];
+		System.out.println("Enter the array elements");
+		for (int i=0; i<a.length; i++)
+		{
+			a[i]=s.nextInt();
+		}
+		System.out.println("The sum of the array elements are:" + );
+	}
+}

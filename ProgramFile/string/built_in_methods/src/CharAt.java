@@ -1,0 +1,23 @@
+
+/*
+	To access a charector in a string at the given position by charAt()
+	Returntype => charecter
+*/
+
+class CharAt
+{
+	public static void main(String[] args) 
+	{
+		String s1 = "apple";
+		System.out.println(s1.charAt(0));
+		System.out.println("-------------------");
+		//char c1 = s1.charAt(s1.length());    //StrinIndexOutOfBoundsException
+		char c2 = s1.charAt(s1.length()-1);
+		//System.out.println(c1);
+		System.out.println(c2);
+		System.out.println("-------------------");
+		//System.out.println(s1.charAt(s1.length()));
+		System.out.println(s1.charAt(s1.length()-1));
+		
+	}
+}

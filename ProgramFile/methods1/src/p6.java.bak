@@ -1,0 +1,26 @@
+class p6
+{
+	static void test()
+	{
+		System.out.println("from test()");
+		return ;
+	}
+	static int test(int a)
+	{
+		System.out.println("from test(int )");
+		return 0;
+	}
+	static short test(short a)
+	{
+		System.out.println("from test(short )");
+		return 0;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Main begin!");
+		test();
+		test(5);
+		test(2)
+		System.out.println("Main end!");
+	}
+}

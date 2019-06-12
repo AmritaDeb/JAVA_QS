@@ -1,0 +1,48 @@
+
+/* WAP to display the strong number [145 (1! + 4! + 5! = 145)] */
+
+class p24
+{
+	public static int fact(int num)
+	{
+		if (num == 1)
+		{
+			return 1;
+		}
+		return num * fact(num-1);
+	}
+	static int digitCount(int num)
+	{
+		int counter = 0;
+		while (num > 0)
+		{
+			num/=10;
+			counter++;
+		}
+		return counter;
+	}
+	static int digitFactSum(int num)
+	{
+		int d_sum = 0;
+		int d_count = digitCount(num);
+		while (num > 0)
+		{
+			int d = num % 10;
+			d_sum = d_sum + fact(d);
+			num/=10;
+		}
+		return d_sum;
+	}
+	public static void main(String[] args) 
+	{		
+		int num = 145;
+		int d_sum = digitFactSum(num);
+		System.out.println("factorials:" + d_sum);
+		if (num == d_sum)
+		{
+			System.out.println("Its a strong number");
+		}
+		else
+			System.out.println("Its not a strong number");
+	}
+}

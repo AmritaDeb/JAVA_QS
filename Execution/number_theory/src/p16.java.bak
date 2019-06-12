@@ -1,0 +1,21 @@
+
+/*
+WAP to display x power n in method
+*/
+
+class p16
+{
+	static int power(int base, pow)
+	{
+		int res = 1;
+		for (int i=1; i<=pow; i++)
+		{
+			res *= base;
+		}
+		return res;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println(power(2,4));
+	}
+}

@@ -1,0 +1,64 @@
+
+/*
+	swap first 2 elements from array
+*/
+
+import java.util.Scanner;
+
+class a12
+{	
+	static Scanner s = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the elemnts:");
+		int a = s.nextInt();
+		int b = s.nextInt();
+		
+		System.out.println("before swapping");
+		System.out.println("a:" + a);
+		System.out.println("b:" + b);
+
+		System.out.println("after swapping");
+		
+		//using temp
+		/*
+		int temp;
+		temp = a;
+		a = b;
+		b = temp;
+		*/
+
+		/*
+		if (a==b)
+		{
+			System.out.println("Both elements are same, so swapping is not needed");
+		}
+		else if (a<b)
+		{
+			b=b-a;
+			a=a+b;
+		}
+		else
+		{
+			a=a-b;
+			b=b+a;
+		}
+		*/
+
+		//addition
+		/*
+		a = a+b;
+		b = a-b;
+		a = a-b;
+		*/
+
+		//multiplication
+		a = a*b;
+		b = a/b;
+		a = a/b;
+		
+		
+		System.out.println("a:" + a);
+		System.out.println("b:" + b);
+	}
+}

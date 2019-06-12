@@ -1,0 +1,29 @@
+package bmg;
+import java.util.Scanner;
+
+class Bmg
+{
+	double w_b = 0.0;
+	double b_amnt;
+	double Badminton()
+	{
+		int cost=200;
+		System.out.println("you are trying to book for baadminton");
+		System.out.println("Cost per hour is Rs." + cost);
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number of hours");
+		int h = s.nextInt();
+		b_amnt=h*cost;
+		System.out.println("The total amount is Rs."+b_amnt);
+		return b_amnt;
+	}
+	void book()
+	{
+		if (w_bal>=b_amnt)
+		{
+			System.out.println("Booked Successfully");
+			w_b-=b_amnt;
+			System.out.println("The updated wallet balance is:" + w_b);
+		}
+	}
+}

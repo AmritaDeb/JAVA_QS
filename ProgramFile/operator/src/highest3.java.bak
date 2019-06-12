@@ -1,0 +1,17 @@
+import pack.oprtr.A4;
+
+public class highest3
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello!");
+		System.out.println(A4.a);
+		System.out.println(A4.b);
+		System.out.println(A4.c);
+		System.out.println(A4.d);
+		System.out.println();
+
+		System.out.println(A4.highest3);
+
+	}
+}

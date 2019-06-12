@@ -1,0 +1,21 @@
+class p12
+{
+	static void test(int i)
+	{
+		//i+=2;
+		System.out.println(i);
+		i+=2;
+		if(i==11)   
+		{
+			return;
+		}
+		test(i);
+		System.out.println(i);
+	}
+	public static void main(String[] args) 
+	{
+		//System.out.println("Main begin!");
+		test(1);
+		//System.out.println("Main end!");
+	}
+}

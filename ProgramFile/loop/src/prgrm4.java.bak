@@ -1,0 +1,13 @@
+class prgrm3 
+{
+	public static void main(String[] args) 
+	{
+		int count1=5;
+		int num1=1;
+		while(count1>0)
+		{
+			System.out.println(num1++);
+			count1--;
+		}
+	}
+}

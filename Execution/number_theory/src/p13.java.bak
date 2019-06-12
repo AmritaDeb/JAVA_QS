@@ -1,0 +1,17 @@
+
+/*
+WAP to display square of a number
+*/
+
+class p13
+{
+	public static void main(String[] args) 
+	{
+		int num = 2;
+		int sq = num * num;
+		System.out.println("The square of" + num + " is: " + sq);
+		int cube = num * num *num;
+		System.out.println("The cube of" + num + " is: " + cube);
+
+	}
+}

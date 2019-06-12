@@ -1,0 +1,39 @@
+class A
+{
+	int i;                                              // Non-static variable
+	static int j;										// Static variable
+	static void test()									// Static method
+	{
+		System.out.println("from A.test()");
+	}
+	void test1()										// Non-static method
+	{
+		System.out.println("from A.test1()");
+	}
+	A()													// Default constructor (initializer2)
+	{
+		System.out.println("from A()");
+	}
+	static												// Static block 
+	{
+		System.out.println("from A.SIB");
+	}
+	{													// Non-static block (initializer1)
+		System.out.println("from A.IIB");
+	}
+	public static void main(String[] args)				// Main method
+	{
+		System.out.println("from A.main()");	
+		A ob = new A();
+		ob.i=10;
+		System.out.println(ob.i);
+		j=20;
+		A.j=40;
+		System.out.println(A.j);
+		test();
+		A.test();
+		ob.test();
+	//	A.test1();   // 
+		ob.test1();
+	}
+}

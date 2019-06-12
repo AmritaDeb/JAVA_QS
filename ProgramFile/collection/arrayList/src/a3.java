@@ -1,0 +1,25 @@
+
+import java.util.*;
+
+class a3
+{
+	public static void main(String[] args) 
+	{
+		List l;
+		AbstractList l1;
+		Collection l2;
+		AbstractCollection l3;
+		ArrayList l4;
+		l4 = new ArrayList();
+		l=l4;
+		l1=l4;
+		l2=l4;
+		l3=l4;
+		l4=(ArrayList) l2;
+		l=(List)l3;
+		l3=(AbstractCollection)l;
+
+		System.out.println("Done");
+	}
+}
+/////////////////////////////////////////////////////

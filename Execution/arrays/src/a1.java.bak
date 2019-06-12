@@ -1,0 +1,36 @@
+
+/*	Read a number from user and
+	find the number is present in the array list or not
+*/
+
+import java.util.Scanner;
+
+class a1
+{
+	static Scanner s = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int [] a = {10,20,30,40};
+		System.out.println("Enter a number to be searched:");
+		int num = s.nextInt();
+		
+		boolean flag = false;
+		for (int i=0; i<a.length; i++)
+		{
+			if (a[i] == num)
+			{
+				flag = true;
+				//break;
+			}
+		}
+		if (flag)
+		{
+			System.out.println("Element is found");
+		}
+		else
+		{
+			System.out.println("Element is not found");
+		}
+
+	}
+}

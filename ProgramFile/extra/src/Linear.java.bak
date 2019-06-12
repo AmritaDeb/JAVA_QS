@@ -1,0 +1,22 @@
+class Linear 
+{
+	public static void main(String[] args) 
+	{
+		int [] a = {10,20,30,40,50};
+		int element = 30;
+		for (int i=0; i<=a.length-1; i++)
+		{
+			if (element == a[i])
+			{
+				System.out.println("Element found in position:" + i);
+				flag=1;
+				break;
+			}
+		}
+		if (flag==0)
+		{
+			System.out.println("Element not found");
+		}
+		
+	}
+}

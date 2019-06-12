@@ -1,0 +1,21 @@
+class F
+{
+	public static void main(String[] args) 
+	{
+	char k='A';
+	for(int j=0; j<3; j++)
+	{
+		for(int i=0; i<3; i++)
+		{
+			System.out.print(k++);
+			if (k=='G')
+			{
+				k='A';
+			}	
+		}
+		System.out.println();
+	}
+	
+	}
+
+}

@@ -1,0 +1,18 @@
+
+/*
+To display the length of a string by length()
+*/
+
+class Length
+{
+	public static void main(String[] args) 
+	{
+		String s1="hello";
+		String s2= new String("apple");
+		System.out.println(s1.length());
+		System.out.println(s2.length());
+		//System.out.println(s2.length);     //CTE
+
+		System.out.println("Girl".length());   //optimized
+	}
+}

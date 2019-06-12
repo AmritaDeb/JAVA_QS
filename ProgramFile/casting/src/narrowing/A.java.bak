@@ -1,0 +1,11 @@
+package narrowing;
+
+public class A
+{		
+		public static char a = 'a';
+		public static byte b = (byte) a  ;
+		public static long c = a  ;
+		public static float d = a  ;
+		public static double e = a  ;
+
+}

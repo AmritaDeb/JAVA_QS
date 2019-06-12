@@ -1,0 +1,55 @@
+class A
+{
+	int i;
+
+	A()
+	{
+	}
+
+	A(int ii)
+	{
+		this.i=ii;
+	}
+
+	public String toString()
+	{
+		return i + "";
+	}
+}
+
+class B extends A
+{
+	float j;
+
+	B()
+	{
+	}
+
+	B(int ii, float jj)
+	{
+		super(10);
+		//this.i=ii;
+		this.j=jj;
+	}
+
+	public String toString()
+	{
+		return super.toString() + "," + j;
+	}
+}
+
+class P4
+{
+	public static void main(String[] args) 
+	{
+		A ob1 = new A(10);
+		System.out.println("-----------------");
+		System.out.println(ob1);
+		System.out.println(ob1.i);
+		System.out.println("-----------------");
+		B ob2 = new B(10,10.5f);
+		System.out.println(ob2);
+		System.out.println(ob2.i);
+		System.out.println(ob2.j);
+	}
+}

@@ -1,0 +1,12 @@
+package widening;
+
+public class E
+{		
+		public static char a = 'a';
+		public static short b = a  ;
+		public static int c = a  ;
+		public static long d = a  ;
+		public static float e = a  ;
+		public static double f = a  ;
+
+}

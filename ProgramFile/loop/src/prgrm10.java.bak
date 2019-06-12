@@ -1,0 +1,15 @@
+class prgrm10
+{
+	public static void main(String[] args) 
+	{
+		int count=100;
+		while(count<=200)
+		{
+			if(count%5==0)
+			{
+				System.out.println(count);
+			}
+			count++;
+		}
+	}
+}

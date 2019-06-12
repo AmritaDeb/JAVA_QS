@@ -1,0 +1,38 @@
+
+//To find the maximum value and minimum value in an integer array
+
+class P8
+{
+	static int maxValue(int[] a)
+	{
+		int max = a[0];
+		for (int i=0; i<a.length; i++)
+		{
+			if (a[i] > max)
+			{
+				max = a[i];
+			}
+		}
+		return max;
+	}
+
+	static int minValue(int[] a)
+	{
+		int min = a[0];
+		for (int i=0; i<a.length; i++)
+		{
+			if (a[i] < min)
+			{
+				min = a[i];
+			}
+		}
+		return min;
+	}
+
+	public static void main(String[] args) 
+	{
+		int[] a = {111,57,96,49};
+		System.out.println("The maximum value:" + maxValue(a));
+		System.out.println("The minimum value:" + minValue(a));
+	}
+}

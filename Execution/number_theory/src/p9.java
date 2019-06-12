@@ -1,0 +1,65 @@
+
+/*Write a program to accept a number from user, 
+and display every digit in a new line in a reverse order*/
+
+import java.util.Scanner;
+
+class p9
+{
+	static Scanner s = new Scanner(System.in);
+
+	static int count(int num)
+	{	
+		int count=0;
+		while (num>0)
+		{
+			num/=10;
+			count++;
+		}
+		return count;
+	}
+
+	public static void main(String[] args) 
+	{    
+		System.out.println("Enter the number:");
+		int num = s.nextInt();       //5687
+		/*
+		int z=count(num);
+		System.out.println("The length of the number:" + z);
+		int[] a =new int[z];
+		for (int i=0; i<z; i++)
+		{  			
+			int c=num%10;
+			a[i]=c;
+			num/=10;
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			 System.out.println(a[i]);
+		}
+		*/
+
+		int rev=0;
+		while (num>0)
+		{
+			rev= rev*10 + num%10;
+			num=num/10;
+		}
+		System.out.println(rev);
+		int z = count(rev);
+		int[] a = new int[z];
+
+		for (int i=0; i<z; i++)
+		{  			
+			int c=rev%10;
+			a[i]=c;
+			rev/=10;
+		}
+		for(int i=a.length-1;i>=0;i--)
+		{
+			System.out.println(a[i]);
+		}
+		
+
+	}
+}

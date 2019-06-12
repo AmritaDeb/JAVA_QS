@@ -1,0 +1,31 @@
+
+/* factorials 5! = ? */
+
+class p20
+{
+	public static void main(String[] args) 
+	{
+		int i;
+		int f=1;
+		int num=5;
+		
+		for(i=1; i<=num; i++)
+		{
+			f=f*i;
+		}
+		
+		/*
+		for (i=num; i>0; i--)
+		{
+			f=f*i;
+		}
+		*/
+		/*
+		for (i=num; i>1; i--)
+		{
+			f=f*i;
+		}
+		*/
+		System.out.println("factorials:" + f);
+	}
+}

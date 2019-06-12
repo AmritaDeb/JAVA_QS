@@ -1,0 +1,8 @@
+class w8
+{
+	public static void main(String[] args) 
+	{
+		Integer a = Integer.valueOf(100a);
+		System.out.println(a);
+	}
+}

@@ -1,0 +1,11 @@
+
+// string to int 
+
+class w9
+{
+	public static void main(String[] args) 
+	{
+		Integer a = Integer.parseInt("100");
+		System.out.println(a);
+	}
+}

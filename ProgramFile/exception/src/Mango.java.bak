@@ -1,0 +1,8 @@
+class Mango extends Fruit 
+{
+	void taste()
+	{
+		System.out.println("Mango taste is sour");
+	}
+	
+}

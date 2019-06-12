@@ -1,0 +1,14 @@
+class p2 
+{
+	static void toDisplay(String name)
+	{
+		System.out.println("Hello " + name);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Main begin!");
+		toDisplay("Sheela");
+		toDisplay("Leela");
+		System.out.println("Main end!");
+	}
+}

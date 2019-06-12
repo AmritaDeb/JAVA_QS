@@ -1,0 +1,46 @@
+
+/*Write a program to accept a number from user, 
+and display every digit in a new line.*/
+
+import java.util.Scanner;
+
+class p8
+{
+	static Scanner s = new Scanner(System.in);
+
+	static int count(int num)
+	{	
+		int count=0;
+		while (num>0)
+		{
+			num/=10;
+			count++;
+		}
+		return count;
+	}
+
+	public static void main(String[] args) 
+	{    
+		System.out.println("Enter the number:");
+		int num = s.nextInt();       //5687
+		int z=count(num);
+		System.out.println("The length of the number:" + z);
+		int[] a =new int[z];
+		for (int i=0; i<z; i++)
+		{  			
+			int c=num%10;
+			a[i]=c;
+			num/=10;
+		}
+		
+		for(int i=a.length-1;i>=0;i--)
+		{
+			System.out.println(a[i]);
+		}
+		System.out.println();
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println(a[i]);
+		}
+	}
+}

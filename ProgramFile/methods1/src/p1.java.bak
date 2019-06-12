@@ -1,0 +1,12 @@
+class p1 
+{
+	static void toDisplay()
+	{
+		System.out.println("Hello ");
+	}
+	public static void main(String[] args) 
+	{
+		toDisplay();
+		System.out.println("World!");
+	}
+}

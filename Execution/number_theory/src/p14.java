@@ -1,0 +1,27 @@
+
+/*
+WAP to display square and cube of a number by a method.
+*/
+
+import java.util.Scanner;
+
+class p14
+{
+	static Scanner s = new Scanner(System.in);
+	public static int sqare(int num)
+	{
+		return num*num;
+	}
+	public static int cube(int num)
+	{
+		return num*num*num;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the number:");
+		int num = s.nextInt();
+		
+		System.out.println("The sqare of" + num + " is: " + sqare(num));
+		System.out.println("The cube of" + num + " is: " + cube(num));
+	}
+}

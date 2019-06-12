@@ -1,0 +1,20 @@
+class even 
+{
+	public static void main(String[] args) 
+	{
+		int i=1999;
+		while (i>1000)
+		{
+			if (i%3==0 || i%6==0)
+			{
+				System.out.println("0");
+			}
+			else
+			{
+				System.out.println(i);
+			}
+			i-=2;
+		}
+		
+	}
+}

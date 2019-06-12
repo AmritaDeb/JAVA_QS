@@ -1,0 +1,24 @@
+
+import java.util.ArrayList;
+
+class a5
+{
+	public static void main(String[] args) 
+	{
+		ArrayList ls = new ArrayList();
+		ls.add("Amy");
+		ls.add(20);
+		ls.add('a');
+		ls.add(true);
+		ls.add(10.2f);
+		System.out.println(ls);
+		ls.remove("Amy");
+		System.out.println(ls);
+		ls.remove(10.2f);
+		System.out.println(ls);
+		char a1 = 'a';
+		int a = a1;
+		ls.remove(b);
+		System.out.println(ls);
+	}
+}

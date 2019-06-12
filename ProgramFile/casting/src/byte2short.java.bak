@@ -1,0 +1,10 @@
+import widening.Byte1;
+
+class byte2short 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(Byte1.a);  
+		System.out.println(Byte1.b);  
+	}
+}

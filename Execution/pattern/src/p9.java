@@ -1,0 +1,34 @@
+
+/*
+	1 0 3 0 5
+	6 0 8 0 1
+	2 0 4 0 6
+	7 0 9 0 2
+*/
+
+class p9
+{
+	public static void main(String[] args) 
+	{
+		int row = 4;
+		int col = 5;
+		int k = 0;
+		
+		for (int j=0; j<row; j++)
+		{
+			for (int i=0; i<col; i++)
+			{
+				if (i==1 || i==3)
+				{
+					System.out.print(0);
+					k++;
+				}
+				else
+					System.out.print((k++%9)+1);
+			}
+			System.out.println();
+			System.out.println();
+			
+		}
+	}
+}

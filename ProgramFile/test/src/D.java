@@ -1,0 +1,24 @@
+class D 
+{
+	private static int a;
+	public static int get_a()
+	{
+		return a;
+	}
+	public static void set_a(int a)
+	{
+		D.a=a;
+	
+	}
+}
+	class E
+	{
+	
+	public static void main(String[] args) 
+		{
+		
+		D.Seta(10);
+		System.out.println("D.get_a");
+		System.out.println("Hey I am done");
+		}
+	}

@@ -1,0 +1,74 @@
+
+// Read a number from user and display in 2D Array
+
+import java.util.Scanner;
+
+class d7
+{
+	static Scanner s = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the order of 1st matrix:");
+		int m = s.nextInt();
+		int n = s.nextInt();
+		System.out.println(m);
+		System.out.println(n);
+
+		System.out.println("Enter the order of 2nd matrix:");
+		int p = s.nextInt();
+		int q = s.nextInt();
+		System.out.println(p);
+		System.out.println(q);
+
+		if (n==p)
+		{
+			int[][] a = new int[m][n];
+			int[][] b = new int[p][q];
+			int[][] c = new int[m][q];
+
+			int sum;
+
+			System.out.println("Enter the elements of 1st matrix:");
+			for (int i=0; i<m; i++)
+			{
+				for (int j=0; j<n; j++)
+				{
+					a[i][j] = s.nextInt();
+				}
+			}
+
+			System.out.println("Enter the elements of 2nd matrix:");
+			for (int i=0; i<m; i++)
+			{
+				for (int j=0; j<n; j++)
+				{
+					b[i][j] = s.nextInt();
+				}
+			}
+
+			//Multiplication
+
+			System.out.println("The result matrix:");
+			for (int i=0; i<m; i++)
+			{
+				for (int j=0; j<n; j++)
+				{
+					sum = 0;
+					for (int k=0; k<n; k++)
+					{
+						sum+=  a[i][k] + b[k][j];
+					}
+					c[i][j] = sum;
+					System.out.print(c[i][j]);
+					System.out.print(' ');
+				}
+				System.out.println();
+			}
+
+		}
+		else
+		{
+			System.out.println("The oreder of A and B should be same");
+		}	
+	}
+}

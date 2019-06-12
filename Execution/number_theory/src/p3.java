@@ -1,0 +1,54 @@
+
+/*Read a number from the user, if the last digit of the number is:
+	> divisible by 5 : print hello
+	> divisible by 2 : print bye
+	> divisible by 3 : print get lost
+*/
+
+import java.util.Scanner;
+
+class p3
+{
+	static Scanner s = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the number:");
+		int num = s.nextInt();         //521
+		System.out.println("The last digit of entered no is:");
+		System.out.println(num % 10);       //1
+		
+		switch (num % 10)
+		{
+		case 5:
+		case 0: System.out.println("hello");
+				break;
+		case 2:
+		case 4:
+		case 6:
+		case 8: System.out.println("bye");
+				break;
+
+		case 3:
+		case 9: System.out.println("get lost");
+				break;
+		}
+
+	/*	
+		int rem=num%10;
+		if(rem % 2 == 0)
+		{
+			System.out.println("hello");
+		}
+		else if(rem % 5 == 0)
+		{
+			System.out.println("bye");
+		}
+		else if(rem % 3 == 0)
+		{
+			System.out.println("get lost");
+		}
+*/
+		
+		}
+	}
+

@@ -1,0 +1,21 @@
+class s4
+{
+	public static void test1(int n)
+	{
+		if (n==0)
+		{
+			return;
+		}
+		else if (n%2==0)
+		{
+			System.out.println(n);
+		}
+		test1(--n);
+	}
+	
+	public static void main(String[] args) 
+	{
+		int n = 50;
+		test1(n);
+	}
+}

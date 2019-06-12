@@ -1,0 +1,34 @@
+
+/*	
+	WAP to obtain the 1st character of a string repeated element or not [ Amrita = A ocuur 2 times]
+*/
+
+
+class a8
+{
+	public static void main(String[] args) 
+	{
+		//System.out.println("Enter the size of the array:");
+		//int size = s.nextInt();
+		
+		char [] a = "Amrita".toUpperCase().toCharArray();
+		int count = 1;
+		System.out.println(a);
+
+		for (int i=1; i<a.length; i++)
+		{
+			if (a[0] == a[i])
+			{
+				count++;
+			}
+		}
+		if (count == 1)
+		{
+			System.out.println(a[0] + " is present " + count + " time ");
+		}
+		else
+		{
+			System.out.println(a[0] + " is present " + count + " times ");
+		}
+	}
+}
